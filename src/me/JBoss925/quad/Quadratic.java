@@ -18,11 +18,6 @@ public class Quadratic implements Cloneable{
     List<Block> blocks;
 
 
-    public static void main(String[] args){
-        Quadratic q = new Quadratic(1.0, 0.0, 0.0);
-        System.out.print(q.getY(5.0));
-    }
-
     public Quadratic(double a, double b, double c){
         this.a = a;
         this.b = b;
