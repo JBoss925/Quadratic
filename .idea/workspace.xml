@@ -67,19 +67,19 @@
       <file leaf-file-name="Quadratic.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/me/JBoss925/quad/Quadratic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="-12.103448" vertical-offset="5280" max-vertical-offset="5715">
+            <state line="367" column="23" selection-start="14706" selection-end="14706" vertical-scroll-proportion="7.5172415" vertical-offset="2235" max-vertical-offset="5805">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2655#2663#0" expanded="true" />
                 <element signature="e#4580#4588#0" expanded="true" />
                 <element signature="e#6096#6106#0" expanded="true" />
-                <element signature="e#8044#8054#0" expanded="true" />
-                <element signature="e#8731#8732#0" expanded="true" />
-                <element signature="e#8760#8761#0" expanded="true" />
-                <element signature="e#11761#11771#0" expanded="true" />
-                <element signature="e#12292#12299#0" expanded="true" />
-                <element signature="e#12934#12944#0" expanded="true" />
-                <element signature="e#14011#14021#0" expanded="true" />
+                <element signature="e#8065#8075#0" expanded="true" />
+                <element signature="e#8776#8777#0" expanded="true" />
+                <element signature="e#8805#8806#0" expanded="true" />
+                <element signature="e#11829#11839#0" expanded="true" />
+                <element signature="e#12360#12367#0" expanded="true" />
+                <element signature="e#13033#13043#0" expanded="true" />
+                <element signature="e#14139#14149#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -489,13 +489,13 @@
             <element signature="e#2655#2663#0" expanded="true" />
             <element signature="e#4580#4588#0" expanded="true" />
             <element signature="e#6096#6106#0" expanded="true" />
-            <element signature="e#8044#8054#0" expanded="true" />
-            <element signature="e#8731#8732#0" expanded="true" />
-            <element signature="e#8760#8761#0" expanded="true" />
-            <element signature="e#11761#11771#0" expanded="true" />
-            <element signature="e#12292#12299#0" expanded="true" />
-            <element signature="e#12934#12944#0" expanded="true" />
-            <element signature="e#14011#14021#0" expanded="true" />
+            <element signature="e#8065#8075#0" expanded="true" />
+            <element signature="e#8776#8777#0" expanded="true" />
+            <element signature="e#8805#8806#0" expanded="true" />
+            <element signature="e#11829#11839#0" expanded="true" />
+            <element signature="e#12360#12367#0" expanded="true" />
+            <element signature="e#13033#13043#0" expanded="true" />
+            <element signature="e#14139#14149#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -529,13 +529,13 @@
             <element signature="e#2655#2663#0" expanded="true" />
             <element signature="e#4580#4588#0" expanded="true" />
             <element signature="e#6096#6106#0" expanded="true" />
-            <element signature="e#8044#8054#0" expanded="true" />
-            <element signature="e#8731#8732#0" expanded="true" />
-            <element signature="e#8760#8761#0" expanded="true" />
-            <element signature="e#11761#11771#0" expanded="true" />
-            <element signature="e#12292#12299#0" expanded="true" />
-            <element signature="e#12934#12944#0" expanded="true" />
-            <element signature="e#14011#14021#0" expanded="true" />
+            <element signature="e#8065#8075#0" expanded="true" />
+            <element signature="e#8776#8777#0" expanded="true" />
+            <element signature="e#8805#8806#0" expanded="true" />
+            <element signature="e#11829#11839#0" expanded="true" />
+            <element signature="e#12360#12367#0" expanded="true" />
+            <element signature="e#13033#13043#0" expanded="true" />
+            <element signature="e#14139#14149#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -569,13 +569,13 @@
             <element signature="e#2655#2663#0" expanded="true" />
             <element signature="e#4580#4588#0" expanded="true" />
             <element signature="e#6096#6106#0" expanded="true" />
-            <element signature="e#8044#8054#0" expanded="true" />
-            <element signature="e#8731#8732#0" expanded="true" />
-            <element signature="e#8760#8761#0" expanded="true" />
-            <element signature="e#11761#11771#0" expanded="true" />
-            <element signature="e#12292#12299#0" expanded="true" />
-            <element signature="e#12934#12944#0" expanded="true" />
-            <element signature="e#14011#14021#0" expanded="true" />
+            <element signature="e#8065#8075#0" expanded="true" />
+            <element signature="e#8776#8777#0" expanded="true" />
+            <element signature="e#8805#8806#0" expanded="true" />
+            <element signature="e#11829#11839#0" expanded="true" />
+            <element signature="e#12360#12367#0" expanded="true" />
+            <element signature="e#13033#13043#0" expanded="true" />
+            <element signature="e#14139#14149#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -588,13 +588,13 @@
             <element signature="e#2655#2663#0" expanded="true" />
             <element signature="e#4580#4588#0" expanded="true" />
             <element signature="e#6096#6106#0" expanded="true" />
-            <element signature="e#8044#8054#0" expanded="true" />
-            <element signature="e#8731#8732#0" expanded="true" />
-            <element signature="e#8760#8761#0" expanded="true" />
-            <element signature="e#11761#11771#0" expanded="true" />
-            <element signature="e#12292#12299#0" expanded="true" />
-            <element signature="e#12934#12944#0" expanded="true" />
-            <element signature="e#14011#14021#0" expanded="true" />
+            <element signature="e#8065#8075#0" expanded="true" />
+            <element signature="e#8776#8777#0" expanded="true" />
+            <element signature="e#8805#8806#0" expanded="true" />
+            <element signature="e#11829#11839#0" expanded="true" />
+            <element signature="e#12360#12367#0" expanded="true" />
+            <element signature="e#13033#13043#0" expanded="true" />
+            <element signature="e#14139#14149#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -712,19 +712,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/me/JBoss925/quad/Quadratic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="-12.103448" vertical-offset="5280" max-vertical-offset="5715">
+        <state line="367" column="23" selection-start="14706" selection-end="14706" vertical-scroll-proportion="7.5172415" vertical-offset="2235" max-vertical-offset="5805">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2655#2663#0" expanded="true" />
             <element signature="e#4580#4588#0" expanded="true" />
             <element signature="e#6096#6106#0" expanded="true" />
-            <element signature="e#8044#8054#0" expanded="true" />
-            <element signature="e#8731#8732#0" expanded="true" />
-            <element signature="e#8760#8761#0" expanded="true" />
-            <element signature="e#11761#11771#0" expanded="true" />
-            <element signature="e#12292#12299#0" expanded="true" />
-            <element signature="e#12934#12944#0" expanded="true" />
-            <element signature="e#14011#14021#0" expanded="true" />
+            <element signature="e#8065#8075#0" expanded="true" />
+            <element signature="e#8776#8777#0" expanded="true" />
+            <element signature="e#8805#8806#0" expanded="true" />
+            <element signature="e#11829#11839#0" expanded="true" />
+            <element signature="e#12360#12367#0" expanded="true" />
+            <element signature="e#13033#13043#0" expanded="true" />
+            <element signature="e#14139#14149#0" expanded="true" />
           </folding>
         </state>
       </provider>

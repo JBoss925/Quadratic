@@ -220,6 +220,7 @@ public class Quadratic implements Cloneable{
                 x = x + changeinterval;
             }
         }
+        locs = vals;
         return vals;
     }
 
@@ -241,6 +242,7 @@ public class Quadratic implements Cloneable{
             double rotatedZ = Math.sin(loca.getYaw()) * (loc.getX() - loca.getX()) + Math.cos(loca.getYaw()) * (loc.getZ() - loca.getZ()) + loca.getZ();
             newlocs.add(new Location(p.getWorld(), rotatedX, loc.getY(), rotatedZ));
         }
+        locs = newlocs;
         return newlocs;
     }
 
@@ -298,6 +300,7 @@ public class Quadratic implements Cloneable{
                 x = x + changeinterval;
             }
         }
+        blocks = vals;
         return vals;
     }
 
@@ -323,6 +326,7 @@ public class Quadratic implements Cloneable{
         for(Location loc : newlocs){
             blocks1.add(p.getWorld().getBlockAt(loc));
         }
+        blocks = blocks1;
         return blocks1;
     }
 
@@ -334,14 +338,15 @@ public class Quadratic implements Cloneable{
      * @param locs - list of locations
      * @return - returns a list of new locations
      */
-    public List<Location> rotateLocations(float rotatedegrees, Location rotateAround, List<Location> locs){
+    public List<Location> rotateLocations(float rotatedegrees, Location rotateAround, List<Location> locations){
         List<Location>  newlocs = new ArrayList<Location>();
         Location loca = new Location(rotateAround.getWorld(), rotateAround.getX(), rotateAround.getY(), rotateAround.getZ());
-        for(Location loc : locs){
+        for(Location loc : locations){
             double rotatedX = Math.cos(rotatedegrees) * (loc.getX() - loca.getX()) - Math.sin(rotatedegrees) * (loc.getZ()-loca.getZ()) + loca.getX();
             double rotatedZ = Math.sin(rotatedegrees) * (loc.getX() - loca.getX()) + Math.cos(rotatedegrees) * (loc.getZ() - loca.getZ()) + loca.getZ();
             newlocs.add(new Location(loca.getWorld(), rotatedX, loc.getY(), rotatedZ));
         }
+        locs = newlocs;
         return newlocs;
     }
 
@@ -360,6 +365,7 @@ public class Quadratic implements Cloneable{
             double rotatedZ = Math.sin(rotatedegrees) * (loc.getX() - loca.getX()) + Math.cos(rotatedegrees) * (loc.getZ() - loca.getZ()) + loca.getZ();
             newlocs.add(new Location(loca.getWorld(), rotatedX, loc.getY(), rotatedZ));
         }
+        locs = newlocs;
         return newlocs;
     }
 
