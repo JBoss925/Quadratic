@@ -18,15 +18,29 @@ public class Main extends JavaPlugin {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if(command.getName().equalsIgnoreCase("fun")){
-            Quadratic q = new Quadratic(1.0, 1.0, 4.0);
+            Quadratic q = new Quadratic(Double.parseDouble(args[0]), 0.0, 0.0);
             Player p = (Player) sender;
-            for(Location loc : q.getLocationsInPlayerAlignedParabola(p, -10.0, 10.0, .5)){
+            for(Location loc : q.getLocationsInCoordinateAlignedQuadratic(-100.0, 100.0, 0.1, p.getLocation().getX(), p.getLocation().getY(), p.getLocation().getZ(), p.getWorld(), false)){
                 Block b = p.getWorld().getBlockAt(loc);
                 b.setType(Material.OBSIDIAN);
-                System.out.println(loc.getX() + "/" + loc.getY() + "/" + loc.getZ() + "/" + p.getLocation().getYaw());
             }
             p.sendMessage("Done");
             return true;
+        }
+        if(command.getName().equalsIgnoreCase("fun2")){
+            Quadratic q = new Quadratic(Double.parseDouble(args[0]), 0.0, 4.0);
+            Player p = (Player) sender;
+            Bukkit.broadcastMessage(p.getLocation().getYaw() + "");
+            for(Location loc : q.getLocationsInPlayerAlignedQuadratic(p, -100.0, 100.0, 0.5)){
+                Block b = p.getWorld().getBlockAt(loc);
+                b.setType(Material.OBSIDIAN);
+            }
+            p.sendMessage("Done");
+            return true;
+        }
+        if(command.getName().equalsIgnoreCase("yaw")){
+            Player p = (Player) sender;
+            Bukkit.broadcastMessage(p.getLocation().getYaw() + "");
         }
         return false;
     }

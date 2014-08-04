@@ -67,21 +67,32 @@
       <file leaf-file-name="Quadratic.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/me/JBoss925/quad/Quadratic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="393" selection-end="393" vertical-scroll-proportion="0.62068963" vertical-offset="0" max-vertical-offset="6315">
+            <state line="93" column="53" selection-start="2701" selection-end="2701" vertical-scroll-proportion="0.47155687" vertical-offset="915" max-vertical-offset="5940">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2513#2521#0" expanded="true" />
-                <element signature="e#4438#4446#0" expanded="true" />
-                <element signature="e#5954#5964#0" expanded="true" />
-                <element signature="e#7923#7933#0" expanded="true" />
-                <element signature="e#8634#8635#0" expanded="true" />
-                <element signature="e#8663#8664#0" expanded="true" />
-                <element signature="e#11687#11697#0" expanded="true" />
-                <element signature="e#12218#12225#0" expanded="true" />
-                <element signature="e#12906#12916#0" expanded="true" />
-                <element signature="e#14022#14032#0" expanded="true" />
-                <element signature="e#15112#15122#0" expanded="true" />
-                <element signature="e#16132#16142#0" expanded="true" />
+                <element signature="method#getY#0;class#Quadratic#0" expanded="false" />
+                <element signature="method#getXIntercepts#0;class#Quadratic#0" expanded="false" />
+                <element signature="e#2909#2917#0" expanded="true" />
+                <element signature="method#getYValues#0;class#Quadratic#0" expanded="false" />
+                <element signature="e#4834#4842#0" expanded="true" />
+                <element signature="e#6350#6360#0" expanded="true" />
+                <element signature="e#8525#8535#0" expanded="true" />
+                <element signature="e#9864#9874#0" expanded="true" />
+                <element signature="method#getBlocksInCoordinateAlignedQuadratic#0;class#Quadratic#0" expanded="false" />
+                <element signature="e#13581#13591#0" expanded="true" />
+                <element signature="e#14175#14182#0" expanded="true" />
+                <element signature="e#14965#14975#0" expanded="true" />
+                <element signature="e#16081#16091#0" expanded="true" />
+                <element signature="method#rotateLocationsAboutXAxis#0;class#Quadratic#0" expanded="false" />
+                <element signature="e#17171#17181#0" expanded="true" />
+                <element signature="method#rotateAboutXAxis#0;class#Quadratic#0" expanded="false" />
+                <element signature="e#18191#18201#0" expanded="true" />
+                <element signature="method#clone#0;class#Quadratic#0" expanded="false" />
+                <element signature="e#19611#19627#0" expanded="true" />
+                <element signature="e#19847#19863#0" expanded="true" />
+                <element signature="e#20227#20243#0" expanded="true" />
+                <element signature="e#20649#20665#0" expanded="true" />
+                <element signature="e#21074#21090#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,7 +101,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/me/JBoss925/quad/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="32" selection-start="996" selection-end="996" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="495">
+            <state line="28" column="9" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
               <folding />
             </state>
           </provider>
@@ -99,7 +110,7 @@
       <file leaf-file-name="plugin.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/plugin.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="27" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="165">
+            <state line="6" column="6" selection-start="88" selection-end="88" vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="195">
               <folding />
             </state>
           </provider>
@@ -127,15 +138,15 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/plugin.yml" />
         <option value="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/src/plugin.yml" />
         <option value="$PROJECT_DIR$/src/me/JBoss925/quad/Main.java" />
         <option value="$PROJECT_DIR$/src/me/JBoss925/quad/Quadratic.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="39" />
+    <option name="x" value="41" />
     <option name="y" value="22" />
     <option name="width" value="1241" />
     <option name="height" value="778" />
@@ -173,6 +184,140 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Quadratic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="craftbukkit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="craftbukkit.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Quadratic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="craftbukkit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="craftbukkit.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Quadratic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="craftbukkit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="craftbukkit.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bukkit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Quadratic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="craftbukkit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="craftbukkit.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bukkit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configuration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Quadratic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="craftbukkit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="craftbukkit.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bukkit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configuration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="serialization" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Quadratic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -434,7 +579,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="39" y="22" width="1241" height="778" extended-state="6" />
+    <frame x="41" y="22" width="1241" height="778" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -454,7 +599,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24979855" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32863188" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32863188" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -488,18 +633,29 @@
         <state line="98" column="31" selection-start="2795" selection-end="2795" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2700">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2513#2521#0" expanded="true" />
-            <element signature="e#4438#4446#0" expanded="true" />
-            <element signature="e#5954#5964#0" expanded="true" />
-            <element signature="e#7923#7933#0" expanded="true" />
-            <element signature="e#8634#8635#0" expanded="true" />
-            <element signature="e#8663#8664#0" expanded="true" />
-            <element signature="e#11687#11697#0" expanded="true" />
-            <element signature="e#12218#12225#0" expanded="true" />
-            <element signature="e#12906#12916#0" expanded="true" />
-            <element signature="e#14022#14032#0" expanded="true" />
-            <element signature="e#15112#15122#0" expanded="true" />
-            <element signature="e#16132#16142#0" expanded="true" />
+            <element signature="method#getY#0;class#Quadratic#0" expanded="false" />
+            <element signature="method#getXIntercepts#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#2909#2917#0" expanded="true" />
+            <element signature="method#getYValues#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#4834#4842#0" expanded="true" />
+            <element signature="e#6350#6360#0" expanded="true" />
+            <element signature="e#8525#8535#0" expanded="true" />
+            <element signature="e#9864#9874#0" expanded="true" />
+            <element signature="method#getBlocksInCoordinateAlignedQuadratic#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#13581#13591#0" expanded="true" />
+            <element signature="e#14175#14182#0" expanded="true" />
+            <element signature="e#14965#14975#0" expanded="true" />
+            <element signature="e#16081#16091#0" expanded="true" />
+            <element signature="method#rotateLocationsAboutXAxis#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#17171#17181#0" expanded="true" />
+            <element signature="method#rotateAboutXAxis#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#18191#18201#0" expanded="true" />
+            <element signature="method#clone#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#19611#19627#0" expanded="true" />
+            <element signature="e#19847#19863#0" expanded="true" />
+            <element signature="e#20227#20243#0" expanded="true" />
+            <element signature="e#20649#20665#0" expanded="true" />
+            <element signature="e#21074#21090#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -530,18 +686,29 @@
         <state line="130" column="2" selection-start="4158" selection-end="4158" vertical-scroll-proportion="0.0" vertical-offset="1950" max-vertical-offset="2175">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2513#2521#0" expanded="true" />
-            <element signature="e#4438#4446#0" expanded="true" />
-            <element signature="e#5954#5964#0" expanded="true" />
-            <element signature="e#7923#7933#0" expanded="true" />
-            <element signature="e#8634#8635#0" expanded="true" />
-            <element signature="e#8663#8664#0" expanded="true" />
-            <element signature="e#11687#11697#0" expanded="true" />
-            <element signature="e#12218#12225#0" expanded="true" />
-            <element signature="e#12906#12916#0" expanded="true" />
-            <element signature="e#14022#14032#0" expanded="true" />
-            <element signature="e#15112#15122#0" expanded="true" />
-            <element signature="e#16132#16142#0" expanded="true" />
+            <element signature="method#getY#0;class#Quadratic#0" expanded="false" />
+            <element signature="method#getXIntercepts#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#2909#2917#0" expanded="true" />
+            <element signature="method#getYValues#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#4834#4842#0" expanded="true" />
+            <element signature="e#6350#6360#0" expanded="true" />
+            <element signature="e#8525#8535#0" expanded="true" />
+            <element signature="e#9864#9874#0" expanded="true" />
+            <element signature="method#getBlocksInCoordinateAlignedQuadratic#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#13581#13591#0" expanded="true" />
+            <element signature="e#14175#14182#0" expanded="true" />
+            <element signature="e#14965#14975#0" expanded="true" />
+            <element signature="e#16081#16091#0" expanded="true" />
+            <element signature="method#rotateLocationsAboutXAxis#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#17171#17181#0" expanded="true" />
+            <element signature="method#rotateAboutXAxis#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#18191#18201#0" expanded="true" />
+            <element signature="method#clone#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#19611#19627#0" expanded="true" />
+            <element signature="e#19847#19863#0" expanded="true" />
+            <element signature="e#20227#20243#0" expanded="true" />
+            <element signature="e#20649#20665#0" expanded="true" />
+            <element signature="e#21074#21090#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -572,18 +739,29 @@
         <state line="75" column="0" selection-start="2080" selection-end="2080" vertical-scroll-proportion="0.0" vertical-offset="857" max-vertical-offset="1335">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2513#2521#0" expanded="true" />
-            <element signature="e#4438#4446#0" expanded="true" />
-            <element signature="e#5954#5964#0" expanded="true" />
-            <element signature="e#7923#7933#0" expanded="true" />
-            <element signature="e#8634#8635#0" expanded="true" />
-            <element signature="e#8663#8664#0" expanded="true" />
-            <element signature="e#11687#11697#0" expanded="true" />
-            <element signature="e#12218#12225#0" expanded="true" />
-            <element signature="e#12906#12916#0" expanded="true" />
-            <element signature="e#14022#14032#0" expanded="true" />
-            <element signature="e#15112#15122#0" expanded="true" />
-            <element signature="e#16132#16142#0" expanded="true" />
+            <element signature="method#getY#0;class#Quadratic#0" expanded="false" />
+            <element signature="method#getXIntercepts#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#2909#2917#0" expanded="true" />
+            <element signature="method#getYValues#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#4834#4842#0" expanded="true" />
+            <element signature="e#6350#6360#0" expanded="true" />
+            <element signature="e#8525#8535#0" expanded="true" />
+            <element signature="e#9864#9874#0" expanded="true" />
+            <element signature="method#getBlocksInCoordinateAlignedQuadratic#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#13581#13591#0" expanded="true" />
+            <element signature="e#14175#14182#0" expanded="true" />
+            <element signature="e#14965#14975#0" expanded="true" />
+            <element signature="e#16081#16091#0" expanded="true" />
+            <element signature="method#rotateLocationsAboutXAxis#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#17171#17181#0" expanded="true" />
+            <element signature="method#rotateAboutXAxis#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#18191#18201#0" expanded="true" />
+            <element signature="method#clone#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#19611#19627#0" expanded="true" />
+            <element signature="e#19847#19863#0" expanded="true" />
+            <element signature="e#20227#20243#0" expanded="true" />
+            <element signature="e#20649#20665#0" expanded="true" />
+            <element signature="e#21074#21090#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -593,25 +771,31 @@
         <state line="58" column="25" selection-start="1627" selection-end="1627" vertical-scroll-proportion="0.0" vertical-offset="797" max-vertical-offset="1245">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2513#2521#0" expanded="true" />
-            <element signature="e#4438#4446#0" expanded="true" />
-            <element signature="e#5954#5964#0" expanded="true" />
-            <element signature="e#7923#7933#0" expanded="true" />
-            <element signature="e#8634#8635#0" expanded="true" />
-            <element signature="e#8663#8664#0" expanded="true" />
-            <element signature="e#11687#11697#0" expanded="true" />
-            <element signature="e#12218#12225#0" expanded="true" />
-            <element signature="e#12906#12916#0" expanded="true" />
-            <element signature="e#14022#14032#0" expanded="true" />
-            <element signature="e#15112#15122#0" expanded="true" />
-            <element signature="e#16132#16142#0" expanded="true" />
+            <element signature="method#getY#0;class#Quadratic#0" expanded="false" />
+            <element signature="method#getXIntercepts#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#2909#2917#0" expanded="true" />
+            <element signature="method#getYValues#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#4834#4842#0" expanded="true" />
+            <element signature="e#6350#6360#0" expanded="true" />
+            <element signature="e#8525#8535#0" expanded="true" />
+            <element signature="e#9864#9874#0" expanded="true" />
+            <element signature="method#getBlocksInCoordinateAlignedQuadratic#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#13581#13591#0" expanded="true" />
+            <element signature="e#14175#14182#0" expanded="true" />
+            <element signature="e#14965#14975#0" expanded="true" />
+            <element signature="e#16081#16091#0" expanded="true" />
+            <element signature="method#rotateLocationsAboutXAxis#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#17171#17181#0" expanded="true" />
+            <element signature="method#rotateAboutXAxis#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#18191#18201#0" expanded="true" />
+            <element signature="method#clone#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#19611#19627#0" expanded="true" />
+            <element signature="e#19847#19863#0" expanded="true" />
+            <element signature="e#20227#20243#0" expanded="true" />
+            <element signature="e#20649#20665#0" expanded="true" />
+            <element signature="e#21074#21090#0" expanded="true" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/lang/Object.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="152" selection-end="152" vertical-scroll-proportion="0.11013216" vertical-offset="0" max-vertical-offset="681" />
       </provider>
     </entry>
     <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/lang/Runnable.class">
@@ -699,13 +883,6 @@
         <state line="6" column="19" selection-start="158" selection-end="158" vertical-scroll-proportion="0.11227545" vertical-offset="0" max-vertical-offset="1110" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="27" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="0" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
@@ -713,30 +890,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/Dropbox/craftbukkit/craftbukkit.jar!/org/bukkit/configuration/serialization/ConfigurationSerialization.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="181" selection-end="181" vertical-scroll-proportion="0.19480519" vertical-offset="0" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Dropbox/craftbukkit/craftbukkit.jar!/org/bukkit/configuration/serialization/SerializableAs.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="18" selection-start="334" selection-end="334" vertical-scroll-proportion="0.2638191" vertical-offset="0" max-vertical-offset="398">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Dropbox/craftbukkit/craftbukkit.jar!/org/bukkit/configuration/Configuration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="17" selection-start="171" selection-end="171" vertical-scroll-proportion="0.18844222" vertical-offset="0" max-vertical-offset="398">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Dropbox/craftbukkit/craftbukkit.jar!/org/bukkit/configuration/serialization/ConfigurationSerializable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="53" selection-start="266" selection-end="266" vertical-scroll-proportion="0.22613065" vertical-offset="0" max-vertical-offset="398">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/lang/Object.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="38" selection-start="457" selection-end="457" vertical-scroll-proportion="0.25531915" vertical-offset="132" max-vertical-offset="555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="6" selection-start="88" selection-end="88" vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/me/JBoss925/quad/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="32" selection-start="996" selection-end="996" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="495">
+        <state line="28" column="9" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/me/JBoss925/quad/Quadratic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="393" selection-end="393" vertical-scroll-proportion="0.62068963" vertical-offset="0" max-vertical-offset="6315">
+        <state line="93" column="53" selection-start="2701" selection-end="2701" vertical-scroll-proportion="0.47155687" vertical-offset="915" max-vertical-offset="5940">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2513#2521#0" expanded="true" />
-            <element signature="e#4438#4446#0" expanded="true" />
-            <element signature="e#5954#5964#0" expanded="true" />
-            <element signature="e#7923#7933#0" expanded="true" />
-            <element signature="e#8634#8635#0" expanded="true" />
-            <element signature="e#8663#8664#0" expanded="true" />
-            <element signature="e#11687#11697#0" expanded="true" />
-            <element signature="e#12218#12225#0" expanded="true" />
-            <element signature="e#12906#12916#0" expanded="true" />
-            <element signature="e#14022#14032#0" expanded="true" />
-            <element signature="e#15112#15122#0" expanded="true" />
-            <element signature="e#16132#16142#0" expanded="true" />
+            <element signature="method#getY#0;class#Quadratic#0" expanded="false" />
+            <element signature="method#getXIntercepts#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#2909#2917#0" expanded="true" />
+            <element signature="method#getYValues#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#4834#4842#0" expanded="true" />
+            <element signature="e#6350#6360#0" expanded="true" />
+            <element signature="e#8525#8535#0" expanded="true" />
+            <element signature="e#9864#9874#0" expanded="true" />
+            <element signature="method#getBlocksInCoordinateAlignedQuadratic#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#13581#13591#0" expanded="true" />
+            <element signature="e#14175#14182#0" expanded="true" />
+            <element signature="e#14965#14975#0" expanded="true" />
+            <element signature="e#16081#16091#0" expanded="true" />
+            <element signature="method#rotateLocationsAboutXAxis#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#17171#17181#0" expanded="true" />
+            <element signature="method#rotateAboutXAxis#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#18191#18201#0" expanded="true" />
+            <element signature="method#clone#0;class#Quadratic#0" expanded="false" />
+            <element signature="e#19611#19627#0" expanded="true" />
+            <element signature="e#19847#19863#0" expanded="true" />
+            <element signature="e#20227#20243#0" expanded="true" />
+            <element signature="e#20649#20665#0" expanded="true" />
+            <element signature="e#21074#21090#0" expanded="true" />
           </folding>
         </state>
       </provider>

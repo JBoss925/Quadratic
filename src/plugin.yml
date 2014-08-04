@@ -3,3 +3,5 @@ main: me.JBoss925.quad.Main
 version: 1.0
 commands:
   fun:
+  fun2:
+  yaw:

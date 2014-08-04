@@ -1,13 +1,16 @@
 package me.JBoss925.quad;
 
+import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.block.Block;
+import org.bukkit.configuration.serialization.ConfigurationSerializable;
 import org.bukkit.entity.Player;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
-public class Quadratic implements Cloneable{
+public class Quadratic implements Cloneable, ConfigurationSerializable{
+
+    //----------------Global Variables-------------------
 
     double a;
     double b;
@@ -17,6 +20,9 @@ public class Quadratic implements Cloneable{
     List<Location> locs;
     List<Block> blocks;
 
+    //---------------------------------------------------
+
+    //-----------------Constructor Possibilities------------------
 
     public Quadratic(double a, double b, double c){
         this.a = a;
@@ -60,6 +66,10 @@ public class Quadratic implements Cloneable{
         this.b = Double.parseDouble(String.valueOf(b).concat(".0"));
         this.c = Double.parseDouble(String.valueOf(c).concat(".0"));
     }
+
+    //----------------------------------------------------------
+
+    //-----------------Methods------------------
 
     /**
      * Used to get the y value at a single x.
@@ -186,16 +196,12 @@ public class Quadratic implements Cloneable{
         if(!rotateForZAsXAxis){
             for(double x = startx; x <= endx;){
                 double d = Math.pow(x, 2.0) * this.a;
-                if(d == 0){
-                    d = 1.0;
-                }
                 d = this.b * x + d;
-                if(d == 0){
-                    d = 1.0;
-                }
                 d = d + this.c;
                 Location loc = new Location(w, x + baseX, d + baseY, baseZ);
-                vals.add(loc);
+                if(!(d + baseY >= w.getMaxHeight())){
+                    vals.add(loc);
+                }
                 x = x + changeinterval;
             }
         }
@@ -210,12 +216,20 @@ public class Quadratic implements Cloneable{
                     d = 1.0;
                 }
                 d = d + this.c;
+                if(d + baseY >= w.getMaxHeight()){
+                    break;
+                }
                 Location loc = new Location(w, baseX, d + baseY, baseZ + x);
-                vals.add(loc);
+                if(!(d + baseY >= w.getMaxHeight())){
+                    vals.add(loc);
+                }
                 x = x + changeinterval;
             }
         }
-        locs = vals;
+        this.startx = startx;
+        this.endx = endx;
+        this.changeinterval = changeinterval;
+        this.locs = vals;
         return vals;
     }
 
@@ -228,17 +242,44 @@ public class Quadratic implements Cloneable{
      * @param changeinterval - the rate at which the x increases from startx to endx
      * @return - list of locations that have been aligned with the player's yaw
      */
-    public List<Location> getLocationsInPlayerAlignedParabola(Player p, double startx, double endx, double changeinterval){
+    public List<Location> getLocationsInPlayerAlignedQuadratic(Player p, double startx, double endx, double changeinterval){
         List<Location> locs = getLocationsInCoordinateAlignedQuadratic(startx, endx, changeinterval, p.getLocation().getX(), p.getLocation().getY(), p.getLocation().getZ(), p.getWorld(), false);
         List<Location> newlocs = new ArrayList<Location>();
         Location loca = p.getLocation();
+        Float yaw1 = loca.getYaw();
+        Bukkit.broadcastMessage(yaw1 + "");
+        double yaw = Math.toRadians(yaw1);
         for(Location loc : locs){
-            double rotatedX = Math.cos(loca.getYaw()) * (loc.getX() - loca.getX()) - Math.sin(loca.getYaw()) * (loc.getZ()-loca.getZ()) + loca.getX();
-            double rotatedZ = Math.sin(loca.getYaw()) * (loc.getX() - loca.getX()) + Math.cos(loca.getYaw()) * (loc.getZ() - loca.getZ()) + loca.getZ();
+            double rotatedX = Math.cos(yaw) * (loc.getX() - loca.getX()) - Math.sin(yaw) * (loc.getZ()-loca.getZ()) + loca.getX();
+            double rotatedZ = Math.sin(yaw) * (loc.getX() - loca.getX()) + Math.cos(yaw) * (loc.getZ() - loca.getZ()) + loca.getZ();
             newlocs.add(new Location(p.getWorld(), rotatedX, loc.getY(), rotatedZ));
         }
-        locs = newlocs;
+        this.startx = startx;
+        this.endx = endx;
+        this.changeinterval = changeinterval;
+        this.locs = newlocs;
         return newlocs;
+    }
+
+    /**
+     * Used to get all the locations within a given quadratic with regards to x and y boundaries.
+     * This method requires that global variables endx, startx, and locs not be null.
+     *
+     * @param ymin - the smallest y that a location can have to be added to the list of locations
+     * @param ymax - the largest y that a location can have to be added to the list of locations
+     * @return - list of locations within a given quadratic
+     */
+    public List<Location> getLocationsWithinCoordinateAlignedQuadratic(double ymin, double ymax){
+        List<Location> allLocs = new ArrayList<Location>();
+        for(Location loc : locs){
+            if(loc.getX() >= startx && loc.getX() <= endx){
+                while(loc.getY() >= ymin && loc.getY() <= ymax){
+                    allLocs.add(new Location(loc.getWorld(), loc.getX(), loc.getY(), loc.getZ()));
+                    loc.setY(loc.getY() + 1.0);
+                }
+            }
+        }
+        return allLocs;
     }
 
     /**
@@ -295,6 +336,9 @@ public class Quadratic implements Cloneable{
                 x = x + changeinterval;
             }
         }
+        this.startx = startx;
+        this.endx = endx;
+        this.changeinterval = changeinterval;
         blocks = vals;
         return vals;
     }
@@ -308,19 +352,26 @@ public class Quadratic implements Cloneable{
      * @param changeinterval - the rate at which the x increases from startx to endx
      * @return - list of blocks in a parabola aligned with the player
      */
-    public List<Block> getBlocksInPlayerAlignedParabola(Player p, double startx, double endx, double changeinterval){
+    public List<Block> getBlocksInPlayerAlignedQuadratic(Player p, double startx, double endx, double changeinterval){
         List<Location> locs = getLocationsInCoordinateAlignedQuadratic(startx, endx, changeinterval, p.getLocation().getX(), p.getLocation().getY(), p.getLocation().getZ(), p.getWorld(), false);
         List<Location> newlocs = new ArrayList<Location>();
         Location loca = p.getLocation();
+        Float yaw = loca.getYaw() + 90f;
+        if(yaw > 360){
+            yaw = yaw - 360;
+        }
         for(Location loc : locs){
-            double rotatedX = Math.cos(loca.getYaw()) * (loc.getX() - loca.getX()) - Math.sin(loca.getYaw()) * (loc.getZ()-loca.getZ()) + loca.getX();
-            double rotatedZ = Math.sin(loca.getYaw()) * (loc.getX() - loca.getX()) + Math.cos(loca.getYaw()) * (loc.getZ() - loca.getZ()) + loca.getZ();
+            double rotatedX = Math.cos(yaw) * (loc.getX() - loca.getX()) - Math.sin(yaw) * (loc.getZ()-loca.getZ()) + loca.getX();
+            double rotatedZ = Math.sin(yaw) * (loc.getX() - loca.getX()) + Math.cos(yaw) * (loc.getZ() - loca.getZ()) + loca.getZ();
             newlocs.add(new Location(p.getWorld(), rotatedX, loc.getY(), rotatedZ));
         }
         List<Block> blocks1 = new ArrayList<Block>();
         for(Location loc : newlocs){
             blocks1.add(p.getWorld().getBlockAt(loc));
         }
+        this.startx = startx;
+        this.endx = endx;
+        this.changeinterval = changeinterval;
         blocks = blocks1;
         return blocks1;
     }
@@ -409,7 +460,74 @@ public class Quadratic implements Cloneable{
      * @return - A new instance of the quadratic.
      */
     @Override
-    public Quadratic clone(){
+    public Quadratic clone() throws CloneNotSupportedException{
         return new Quadratic(this.a, this.b, this.c);
     }
+
+    @Override
+    public Map<String, Object> serialize() {
+        Double a = this.a;
+        Double b = this.b;
+        Double c = this.c;
+        if(a == null || b == null || c == null){
+            throw new NullPointerException("Make sure the most basic a,b,c variables are not null!");
+        }
+        Double startx = this.startx;
+        Double endx = this.endx;
+        Double changeinterval = this.changeinterval;
+        if(startx == null || endx == null || changeinterval == null){
+            Map<String, Object> map = new HashMap<String, Object>();
+            map.put("a", this.a);
+            map.put("b", this.b);
+            map.put("c", this.c);
+            return map;
+        }
+        if(this.base == null){
+            Map<String, Object> map = new HashMap<String, Object>();
+            map.put("a", this.a);
+            map.put("b", this.b);
+            map.put("c", this.c);
+            map.put("startx", this.startx);
+            map.put("endx", this.endx);
+            map.put("changeInterval", this.changeinterval);
+            return map;
+        }
+        if(this.locs == null){
+            Map<String, Object> map = new HashMap<String, Object>();
+            map.put("a", this.a);
+            map.put("b", this.b);
+            map.put("c", this.c);
+            map.put("startx", this.startx);
+            map.put("endx", this.endx);
+            map.put("changeInterval", this.changeinterval);
+            map.put("base", this.base);
+            return map;
+        }
+        if(this.blocks == null){
+            Map<String, Object> map = new HashMap<String, Object>();
+            map.put("a", this.a);
+            map.put("b", this.b);
+            map.put("c", this.c);
+            map.put("startx", this.startx);
+            map.put("endx", this.endx);
+            map.put("changeInterval", this.changeinterval);
+            map.put("base", this.base);
+            map.put("locs", this.locs);
+            return map;
+        }
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("a", this.a);
+        map.put("b", this.b);
+        map.put("c", this.c);
+        map.put("startx", this.startx);
+        map.put("endx", this.endx);
+        map.put("changeInterval", this.changeinterval);
+        map.put("base", this.base);
+        map.put("locs", this.locs);
+        map.put("blocks", this.blocks);
+        return map;
+    }
+
+    //-------------------------------------------
+
 }
