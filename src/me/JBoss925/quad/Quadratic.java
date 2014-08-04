@@ -335,10 +335,10 @@ public class Quadratic implements Cloneable{
      *
      * @param rotatedegrees - degrees the locations will be rotated
      * @param rotateAround - locations the locations will be rotated about
-     * @param locs - list of locations
+     * @param locations - list of locations
      * @return - returns a list of new locations
      */
-    public List<Location> rotateLocations(float rotatedegrees, Location rotateAround, List<Location> locations){
+    public List<Location> rotateLocationsAboutYAxis(float rotatedegrees, Location rotateAround, List<Location> locations){
         List<Location>  newlocs = new ArrayList<Location>();
         Location loca = new Location(rotateAround.getWorld(), rotateAround.getX(), rotateAround.getY(), rotateAround.getZ());
         for(Location loc : locations){
@@ -357,13 +357,52 @@ public class Quadratic implements Cloneable{
      * @param rotatedegrees - degrees the locations will be rotated
      * @return - returns a list of new locations
      */
-    public List<Location> rotate(float rotatedegrees){
+    public List<Location> rotateAboutYAxis(float rotatedegrees){
         List<Location>  newlocs = new ArrayList<Location>();
         Location loca = new Location(base.getWorld(), base.getX(), base.getY(), base.getZ());
         for(Location loc : locs){
             double rotatedX = Math.cos(rotatedegrees) * (loc.getX() - loca.getX()) - Math.sin(rotatedegrees) * (loc.getZ()-loca.getZ()) + loca.getX();
             double rotatedZ = Math.sin(rotatedegrees) * (loc.getX() - loca.getX()) + Math.cos(rotatedegrees) * (loc.getZ() - loca.getZ()) + loca.getZ();
             newlocs.add(new Location(loca.getWorld(), rotatedX, loc.getY(), rotatedZ));
+        }
+        locs = newlocs;
+        return newlocs;
+    }
+
+    /**
+     * Used to rotate a quadratic about the x axis
+     *
+     * @param rotatedegrees - degrees the locations will be rotated
+     * @param rotateAround - locations the locations will be rotated about
+     * @param locations - list of locations
+     * @return - list of locations rotated about the X axis
+     */
+    public List<Location> rotateLocationsAboutXAxis(float rotatedegrees, Location rotateAround, List<Location> locations){
+        List<Location>  newlocs = new ArrayList<Location>();
+        Location loca = new Location(rotateAround.getWorld(), rotateAround.getX(), rotateAround.getY(), rotateAround.getZ());
+        for(Location loc : locations){
+            double rotatedZ = Math.cos(rotatedegrees) * (loc.getZ() - loca.getZ()) - Math.sin(rotatedegrees) * (loc.getY() - loca.getY()) + loca.getZ();
+            double rotatedY = Math.sin(rotatedegrees) * (loc.getZ() - loca.getZ()) + Math.cos(rotatedegrees) * (loc.getY() - loca.getY()) + loca.getY();
+            newlocs.add(new Location(loca.getWorld(), loc.getX(), rotatedY, rotatedZ));
+        }
+        locs = newlocs;
+        return newlocs;
+    }
+
+    /**
+     * This method the global variables locs and base not be null.
+     * Used to rotate a quadratic about the x axis.
+     *
+     * @param rotatedegrees - degrees the locations will be rotated
+     * @return - list of locations rotated about the X axis
+     */
+    public List<Location> rotateAboutXAxis(float rotatedegrees){
+        List<Location>  newlocs = new ArrayList<Location>();
+        Location loca = new Location(base.getWorld(), base.getX(), base.getY(), base.getZ());
+        for(Location loc : locs){
+            double rotatedY = Math.cos(rotatedegrees) * (loc.getY() - loca.getY()) - Math.sin(rotatedegrees) * (loc.getZ()-loca.getZ()) + loca.getY();
+            double rotatedZ = Math.sin(rotatedegrees) * (loc.getY() - loca.getY()) + Math.cos(rotatedegrees) * (loc.getZ() - loca.getZ()) + loca.getZ();
+            newlocs.add(new Location(loca.getWorld(), loc.getX(), rotatedY, rotatedZ));
         }
         locs = newlocs;
         return newlocs;

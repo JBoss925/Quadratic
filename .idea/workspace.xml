@@ -67,7 +67,7 @@
       <file leaf-file-name="Quadratic.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/me/JBoss925/quad/Quadratic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="367" column="23" selection-start="14706" selection-end="14706" vertical-scroll-proportion="7.5172415" vertical-offset="2235" max-vertical-offset="5805">
+            <state line="392" column="66" selection-start="15966" selection-end="15966" vertical-scroll-proportion="6.2413793" vertical-offset="3165" max-vertical-offset="6390">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2655#2663#0" expanded="true" />
@@ -78,8 +78,10 @@
                 <element signature="e#8805#8806#0" expanded="true" />
                 <element signature="e#11829#11839#0" expanded="true" />
                 <element signature="e#12360#12367#0" expanded="true" />
-                <element signature="e#13033#13043#0" expanded="true" />
-                <element signature="e#14139#14149#0" expanded="true" />
+                <element signature="e#13048#13058#0" expanded="true" />
+                <element signature="e#14164#14174#0" expanded="true" />
+                <element signature="e#15254#15264#0" expanded="true" />
+                <element signature="e#16274#16284#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -432,7 +434,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="39" y="22" width="1241" height="778" extended-state="7" />
+    <frame x="39" y="22" width="1241" height="778" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -494,8 +496,10 @@
             <element signature="e#8805#8806#0" expanded="true" />
             <element signature="e#11829#11839#0" expanded="true" />
             <element signature="e#12360#12367#0" expanded="true" />
-            <element signature="e#13033#13043#0" expanded="true" />
-            <element signature="e#14139#14149#0" expanded="true" />
+            <element signature="e#13048#13058#0" expanded="true" />
+            <element signature="e#14164#14174#0" expanded="true" />
+            <element signature="e#15254#15264#0" expanded="true" />
+            <element signature="e#16274#16284#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -534,8 +538,10 @@
             <element signature="e#8805#8806#0" expanded="true" />
             <element signature="e#11829#11839#0" expanded="true" />
             <element signature="e#12360#12367#0" expanded="true" />
-            <element signature="e#13033#13043#0" expanded="true" />
-            <element signature="e#14139#14149#0" expanded="true" />
+            <element signature="e#13048#13058#0" expanded="true" />
+            <element signature="e#14164#14174#0" expanded="true" />
+            <element signature="e#15254#15264#0" expanded="true" />
+            <element signature="e#16274#16284#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -574,8 +580,10 @@
             <element signature="e#8805#8806#0" expanded="true" />
             <element signature="e#11829#11839#0" expanded="true" />
             <element signature="e#12360#12367#0" expanded="true" />
-            <element signature="e#13033#13043#0" expanded="true" />
-            <element signature="e#14139#14149#0" expanded="true" />
+            <element signature="e#13048#13058#0" expanded="true" />
+            <element signature="e#14164#14174#0" expanded="true" />
+            <element signature="e#15254#15264#0" expanded="true" />
+            <element signature="e#16274#16284#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -593,8 +601,10 @@
             <element signature="e#8805#8806#0" expanded="true" />
             <element signature="e#11829#11839#0" expanded="true" />
             <element signature="e#12360#12367#0" expanded="true" />
-            <element signature="e#13033#13043#0" expanded="true" />
-            <element signature="e#14139#14149#0" expanded="true" />
+            <element signature="e#13048#13058#0" expanded="true" />
+            <element signature="e#14164#14174#0" expanded="true" />
+            <element signature="e#15254#15264#0" expanded="true" />
+            <element signature="e#16274#16284#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -712,7 +722,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/me/JBoss925/quad/Quadratic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="367" column="23" selection-start="14706" selection-end="14706" vertical-scroll-proportion="7.5172415" vertical-offset="2235" max-vertical-offset="5805">
+        <state line="392" column="66" selection-start="15966" selection-end="15966" vertical-scroll-proportion="6.2413793" vertical-offset="3165" max-vertical-offset="6390">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2655#2663#0" expanded="true" />
@@ -723,8 +733,10 @@
             <element signature="e#8805#8806#0" expanded="true" />
             <element signature="e#11829#11839#0" expanded="true" />
             <element signature="e#12360#12367#0" expanded="true" />
-            <element signature="e#13033#13043#0" expanded="true" />
-            <element signature="e#14139#14149#0" expanded="true" />
+            <element signature="e#13048#13058#0" expanded="true" />
+            <element signature="e#14164#14174#0" expanded="true" />
+            <element signature="e#15254#15264#0" expanded="true" />
+            <element signature="e#16274#16284#0" expanded="true" />
           </folding>
         </state>
       </provider>
