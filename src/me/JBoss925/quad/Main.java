@@ -30,7 +30,6 @@ public class Main extends JavaPlugin {
         if(command.getName().equalsIgnoreCase("fun2")){
             Quadratic q = new Quadratic(Double.parseDouble(args[0]), 0.0, 4.0);
             Player p = (Player) sender;
-            Bukkit.broadcastMessage(p.getLocation().getYaw() + "");
             for(Location loc : q.getLocationsInPlayerAlignedQuadratic(p, -100.0, 100.0, 0.5)){
                 Block b = p.getWorld().getBlockAt(loc);
                 b.setType(Material.OBSIDIAN);
@@ -40,7 +39,6 @@ public class Main extends JavaPlugin {
         }
         if(command.getName().equalsIgnoreCase("yaw")){
             Player p = (Player) sender;
-            Bukkit.broadcastMessage(p.getLocation().getYaw() + "");
         }
         return false;
     }

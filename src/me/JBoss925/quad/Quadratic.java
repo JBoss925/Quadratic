@@ -247,7 +247,6 @@ public class Quadratic implements Cloneable, ConfigurationSerializable{
         List<Location> newlocs = new ArrayList<Location>();
         Location loca = p.getLocation();
         Float yaw1 = loca.getYaw();
-        Bukkit.broadcastMessage(yaw1 + "");
         double yaw = Math.toRadians(yaw1);
         for(Location loc : locs){
             double rotatedX = Math.cos(yaw) * (loc.getX() - loca.getX()) - Math.sin(yaw) * (loc.getZ()-loca.getZ()) + loca.getX();
