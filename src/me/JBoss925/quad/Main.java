@@ -24,17 +24,15 @@ public class Main extends JavaPlugin {
                 Block b = p.getWorld().getBlockAt(loc);
                 b.setType(Material.OBSIDIAN);
             }
-            p.sendMessage("Done");
             return true;
         }
         if(command.getName().equalsIgnoreCase("fun2")){
             Quadratic q = new Quadratic(Double.parseDouble(args[0]), 0.0, 4.0);
             Player p = (Player) sender;
-            for(Location loc : q.getLocationsInPlayerAlignedQuadratic(p, -100.0, 100.0, 0.5)){
+            for(Location loc : q.getLocationsInPlayerAlignedQuadratic(p, -100.0, 100.0, 0.1)){
                 Block b = p.getWorld().getBlockAt(loc);
                 b.setType(Material.OBSIDIAN);
             }
-            p.sendMessage("Done");
             return true;
         }
         if(command.getName().equalsIgnoreCase("yaw")){

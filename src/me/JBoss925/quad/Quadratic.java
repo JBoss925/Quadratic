@@ -1,6 +1,5 @@
 package me.JBoss925.quad;
 
-import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.block.Block;
@@ -355,10 +354,8 @@ public class Quadratic implements Cloneable, ConfigurationSerializable{
         List<Location> locs = getLocationsInCoordinateAlignedQuadratic(startx, endx, changeinterval, p.getLocation().getX(), p.getLocation().getY(), p.getLocation().getZ(), p.getWorld(), false);
         List<Location> newlocs = new ArrayList<Location>();
         Location loca = p.getLocation();
-        Float yaw = loca.getYaw() + 90f;
-        if(yaw > 360){
-            yaw = yaw - 360;
-        }
+        Float yaw1 = loca.getYaw();
+        double yaw = Math.toRadians(yaw1);
         for(Location loc : locs){
             double rotatedX = Math.cos(yaw) * (loc.getX() - loca.getX()) - Math.sin(yaw) * (loc.getZ()-loca.getZ()) + loca.getX();
             double rotatedZ = Math.sin(yaw) * (loc.getX() - loca.getX()) + Math.cos(yaw) * (loc.getZ() - loca.getZ()) + loca.getZ();
@@ -386,9 +383,10 @@ public class Quadratic implements Cloneable, ConfigurationSerializable{
     public List<Location> rotateLocationsAboutYAxis(float rotatedegrees, Location rotateAround, List<Location> locations){
         List<Location>  newlocs = new ArrayList<Location>();
         Location loca = new Location(rotateAround.getWorld(), rotateAround.getX(), rotateAround.getY(), rotateAround.getZ());
+        Double rotatedegreeses = Math.toRadians(rotatedegrees);
         for(Location loc : locations){
-            double rotatedX = Math.cos(rotatedegrees) * (loc.getX() - loca.getX()) - Math.sin(rotatedegrees) * (loc.getZ()-loca.getZ()) + loca.getX();
-            double rotatedZ = Math.sin(rotatedegrees) * (loc.getX() - loca.getX()) + Math.cos(rotatedegrees) * (loc.getZ() - loca.getZ()) + loca.getZ();
+            double rotatedX = Math.cos(rotatedegreeses) * (loc.getX() - loca.getX()) - Math.sin(rotatedegreeses) * (loc.getZ()-loca.getZ()) + loca.getX();
+            double rotatedZ = Math.sin(rotatedegreeses) * (loc.getX() - loca.getX()) + Math.cos(rotatedegreeses) * (loc.getZ() - loca.getZ()) + loca.getZ();
             newlocs.add(new Location(loca.getWorld(), rotatedX, loc.getY(), rotatedZ));
         }
         locs = newlocs;
@@ -405,9 +403,10 @@ public class Quadratic implements Cloneable, ConfigurationSerializable{
     public List<Location> rotateAboutYAxis(float rotatedegrees){
         List<Location>  newlocs = new ArrayList<Location>();
         Location loca = new Location(base.getWorld(), base.getX(), base.getY(), base.getZ());
+        Double rotatedegreeses = Math.toRadians(rotatedegrees);
         for(Location loc : locs){
-            double rotatedX = Math.cos(rotatedegrees) * (loc.getX() - loca.getX()) - Math.sin(rotatedegrees) * (loc.getZ()-loca.getZ()) + loca.getX();
-            double rotatedZ = Math.sin(rotatedegrees) * (loc.getX() - loca.getX()) + Math.cos(rotatedegrees) * (loc.getZ() - loca.getZ()) + loca.getZ();
+            double rotatedX = Math.cos(rotatedegreeses) * (loc.getX() - loca.getX()) - Math.sin(rotatedegreeses) * (loc.getZ()-loca.getZ()) + loca.getX();
+            double rotatedZ = Math.sin(rotatedegreeses) * (loc.getX() - loca.getX()) + Math.cos(rotatedegreeses) * (loc.getZ() - loca.getZ()) + loca.getZ();
             newlocs.add(new Location(loca.getWorld(), rotatedX, loc.getY(), rotatedZ));
         }
         locs = newlocs;
@@ -425,9 +424,10 @@ public class Quadratic implements Cloneable, ConfigurationSerializable{
     public List<Location> rotateLocationsAboutXAxis(float rotatedegrees, Location rotateAround, List<Location> locations){
         List<Location>  newlocs = new ArrayList<Location>();
         Location loca = new Location(rotateAround.getWorld(), rotateAround.getX(), rotateAround.getY(), rotateAround.getZ());
+        Double rotatedegreeses = Math.toRadians(rotatedegrees);
         for(Location loc : locations){
-            double rotatedZ = Math.cos(rotatedegrees) * (loc.getZ() - loca.getZ()) - Math.sin(rotatedegrees) * (loc.getY() - loca.getY()) + loca.getZ();
-            double rotatedY = Math.sin(rotatedegrees) * (loc.getZ() - loca.getZ()) + Math.cos(rotatedegrees) * (loc.getY() - loca.getY()) + loca.getY();
+            double rotatedZ = Math.cos(rotatedegreeses) * (loc.getZ() - loca.getZ()) - Math.sin(rotatedegreeses) * (loc.getY() - loca.getY()) + loca.getZ();
+            double rotatedY = Math.sin(rotatedegreeses) * (loc.getZ() - loca.getZ()) + Math.cos(rotatedegreeses) * (loc.getY() - loca.getY()) + loca.getY();
             newlocs.add(new Location(loca.getWorld(), loc.getX(), rotatedY, rotatedZ));
         }
         locs = newlocs;
@@ -435,7 +435,7 @@ public class Quadratic implements Cloneable, ConfigurationSerializable{
     }
 
     /**
-     * This method the global variables locs and base not be null.
+     * This method requires the global variables locs and base not be null.
      * Used to rotate a quadratic about the x axis.
      *
      * @param rotatedegrees - degrees the locations will be rotated
@@ -444,9 +444,10 @@ public class Quadratic implements Cloneable, ConfigurationSerializable{
     public List<Location> rotateAboutXAxis(float rotatedegrees){
         List<Location>  newlocs = new ArrayList<Location>();
         Location loca = new Location(base.getWorld(), base.getX(), base.getY(), base.getZ());
+        Double rotatedegreeses = Math.toRadians(rotatedegrees);
         for(Location loc : locs){
-            double rotatedY = Math.cos(rotatedegrees) * (loc.getY() - loca.getY()) - Math.sin(rotatedegrees) * (loc.getZ()-loca.getZ()) + loca.getY();
-            double rotatedZ = Math.sin(rotatedegrees) * (loc.getY() - loca.getY()) + Math.cos(rotatedegrees) * (loc.getZ() - loca.getZ()) + loca.getZ();
+            double rotatedY = Math.cos(rotatedegreeses) * (loc.getY() - loca.getY()) - Math.sin(rotatedegreeses) * (loc.getZ()-loca.getZ()) + loca.getY();
+            double rotatedZ = Math.sin(rotatedegreeses) * (loc.getY() - loca.getY()) + Math.cos(rotatedegreeses) * (loc.getZ() - loca.getZ()) + loca.getZ();
             newlocs.add(new Location(loca.getWorld(), loc.getX(), rotatedY, rotatedZ));
         }
         locs = newlocs;
@@ -525,6 +526,26 @@ public class Quadratic implements Cloneable, ConfigurationSerializable{
         map.put("locs", this.locs);
         map.put("blocks", this.blocks);
         return map;
+    }
+
+    public void deserialize(Map<String, Object> map){
+        this.a = (Double) map.get("a");
+        this.b = (Double) map.get("b");
+        this.c = (Double) map.get("c");
+        if(map.get("startx") != null){
+            this.startx = (Double) map.get("startx");
+            this.endx = (Double) map.get("endx");
+            this.changeinterval = (Double) map.get("changeInterval");
+        }
+        if(map.get("base") != null){
+            this.base = (Location) map.get("base");
+        }
+        if(map.get("locs") != null){
+            this.locs = (List<Location>) map.get("locs");
+        }
+        if(map.get("blocks") != null){
+            this.blocks = (List<Block>) map.get("blocks");
+        }
     }
 
     //-------------------------------------------
